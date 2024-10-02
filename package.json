@@ -1,0 +1,14 @@
+{
+  "name": "CommitQuality",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^9.0.9",
+    "@wdio/local-runner": "^9.0.9",
+    "@wdio/mocha-framework": "^9.0.8"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "add": "wdio run ./wdio.conf.js --spec add-product.e2e.js",
+    "product": "wdio run ./wdio.conf.js --spec productpage.e2e.js"
+  }
+}
