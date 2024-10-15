@@ -38,6 +38,18 @@ class AddProduct extends Page {
         return this.formComponent(num).$('input');
     }
 
+    formErrorMessage (num) {
+        return this.formComponent(num).$('div[class="error-message"]')
+    }
+
+    get formFillValidation () {
+        return $('div[data-testid="fillin-all-fields-validation"]');
+    }
+
+    get formValidation () {
+        return $('div[data-testid="all-fields-validation"]');
+    }
+
     /**
      * overwrite specific options to adapt it to page object
      */
